@@ -1,0 +1,128 @@
+/* ..............................Third page........................... */
+
+img.icon.one{
+  position: absolute;
+    top: 100px;
+    left: 0px;
+    height: 530px;
+    width: 700px;
+    z-index: 0;
+  }
+  
+  img.pic.one{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    height: 460px;
+    width: 480px;
+    z-index: 1;
+    border-radius: 30px;
+  }
+  
+  span.thirtyone{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    color: #000000;
+    font-size: 65px;
+    font-weight: 600;
+  }
+  
+  span.thirtytwo{
+    position: absolute;
+    top: 300px;
+    right: 220px;
+    font-size: 16px;
+    color: #808080;
+  }
+  
+  button.bird.one{
+    position: absolute;
+    top: 400px;
+    right: 235px;
+    background: #6663e9;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  img.icon.two{
+    position: absolute;
+    top: 700px;
+    right: 0px;
+    height: 530px;
+    width: 660px;
+    z-index: 0;
+  }
+  
+  img.pic.two{
+    position: absolute;
+    top: 650px;
+    right: 125px;
+    height: 460px;
+    width: 480px;
+    z-index: 1;
+    border-radius: 30px;
+  }
+  
+  span.thirtythree{
+    position: absolute;
+    top: 780px;
+    left: 160px;
+    color: #000000;
+    font-size: 65px;
+    font-weight: 600;
+  }
+  
+  span.thirtyfour{
+    position: absolute;
+    top: 970px;
+    left: 160px;
+    font-size: 16px;
+    color: #808080;
+  }
+  
+  button.bird.two{
+    position: absolute;
+    top: 1050px;
+    left: 160px;
+    background: #6663e9;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+  }
+  
+
+  div.position.one:hover .pic.one, div.position.two:hover .pic.two{
+    transform: rotateY(360deg);
+    transition: all 1.65s;
+  }
+  
+  span.thirtyone, span.thirtythree{
+    --c: #6663e9;
+    text-shadow:
+          7px var(--_t, 2.2em) #fff,
+          0 0 var(--_c,#000);
+    box-shadow: 20px var(--_t, 2.2em) #000;
+    clip-path: inset(0 -20px 1px 0);
+    background: linear-gradient(var(--c) 0 0) 0 var(--_t, 2.2em) no-repeat;
+    transition: 0.4s , clip-path 0.4s 0.4s;
+  }
+  span.thirtyone:hover, span.thirtythree:hover {
+    --_t: 0;
+    clip-path: inset(0 -20px calc(-1* 2.2em) 0);
+    transition: 0.4s 0.4s, clip-path 0.4s;
+  }
+  
+  
+  button.bird.one:hover, button.bird.two:hover{
+    background: #6663e9;
+    color: #000000;
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
